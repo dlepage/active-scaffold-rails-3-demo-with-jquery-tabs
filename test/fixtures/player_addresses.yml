@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  street: MyString
+  region: MyString
+  country: 
+  primary: false
+
+two:
+  street: MyString
+  region: MyString
+  country: 
+  primary: false
