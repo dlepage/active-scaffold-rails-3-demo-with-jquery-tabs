@@ -2839,3 +2839,829 @@ Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffol
 Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (67.4ms)
 Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb within layouts/application (74.0ms)
 Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players" for 127.0.0.1 at Mon Mar 28 09:06:46 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" ORDER BY "players"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (1.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (7.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (34.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (58.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (74.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 128ms (Views: 100.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:06:50 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_messages.html.erb (5.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (58.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (90.0ms)
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[36mSQL (16.7ms)[0m  [1mSELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))[0m
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (53.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (4.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (74.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (154.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (183.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (198.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (201.4ms)
+Completed 200 OK in 228ms (Views: 205.8ms | ActiveRecord: 16.9ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))[0m
+  [1m[35mPlayerEmail Load (0.2ms)[0m  SELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (70.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (75.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (104.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (129.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (144.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (147.5ms)
+Completed 200 OK in 225ms (Views: 151.6ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (3025.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (3028.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (3062.9ms)
+Completed 200 OK in 3084ms (Views: 3080.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/player_emails/1/edit?eid=5560fdc09ffd27e83848f2b170b60e0f&adapter=_list_inline_adapter" for 127.0.0.1 at Mon Mar 28 09:06:57 -0400 2011
+  Processing by PlayerEmailsController#edit as JS
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [1m[36mPlayerEmail Load (0.2ms)[0m  [1mSELECT "player_emails".* FROM "player_emails" WHERE "player_emails"."id" = 1 LIMIT 1[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (16.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (22.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (26.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_inline_adapter.html.erb (5.0ms)
+Completed 200 OK in 65ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/player_emails/1?eid=5560fdc09ffd27e83848f2b170b60e0f" for 127.0.0.1 at Mon Mar 28 09:07:03 -0400 2011
+  Processing by PlayerEmailsController#update as JS
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "commit"=>"Update", "authenticity_token"=>"Gu7UK2kp5u9n0sXlTMkMZ9+phzhLPTfUntyoaj4/Xrc=", "utf8"=>"✓", "id"=>"1", "record"=>{"primary"=>"1", "email"=>"carey.price3@canadiens.com"}}
+  [1m[35mPlayerEmail Load (0.2ms)[0m  SELECT "player_emails".* FROM "player_emails" WHERE "player_emails"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "player_emails" SET "updated_at" = '2011-03-28 13:07:03.881588', "email" = 'carey.price3@canadiens.com' WHERE "player_emails"."id" = 1[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (19.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/on_update.js.rjs (27.4ms)
+Completed 200 OK in 211ms (Views: 45.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/players/1" for 127.0.0.1 at Mon Mar 28 09:07:13 -0400 2011
+  Processing by PlayersController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"Gu7UK2kp5u9n0sXlTMkMZ9+phzhLPTfUntyoaj4/Xrc=", "utf8"=>"✓", "id"=>"1", "record"=>{"name"=>"Carey PRICE", "injured"=>"0", "salary"=>"2000001.000", "date_of_birth"=>"1986-11-05", "team_id"=>"1"}}
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "players" SET "updated_at" = '2011-03-28 13:07:13.054760', "salary" = 2000001.0 WHERE "players"."id" = 1[0m
+Redirected to http://localhost:3000/players
+Completed 302 Found in 9ms
+
+
+Started GET "/players" for 127.0.0.1 at Mon Mar 28 09:07:13 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY "players"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (6.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (1.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (70.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (7.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (102.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (123.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (136.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb within layouts/application (143.4ms)
+Completed 200 OK in 156ms (Views: 151.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:07:18 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_messages.html.erb (4.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (38.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (52.6ms)
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))[0m
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (71.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (6.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (38.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (133.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (148.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (151.6ms)
+Completed 200 OK in 161ms (Views: 155.8ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))[0m
+  [1m[35mPlayerEmail Load (0.1ms)[0m  SELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (71.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (9.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (37.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (129.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (144.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (147.5ms)
+Completed 200 OK in 157ms (Views: 151.6ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (566.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (568.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (575.4ms)
+Completed 200 OK in 587ms (Views: 583.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/player_addresses/2/edit?eid=0c20437c1155c905475abe502d8030b9&adapter=_list_inline_adapter" for 127.0.0.1 at Mon Mar 28 09:07:27 -0400 2011
+  Processing by PlayerAddressesController#edit as JS
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "adapter"=>"_list_inline_adapter", "id"=>"2"}
+  [1m[36mPlayerAddress Load (0.2ms)[0m  [1mSELECT "player_addresses".* FROM "player_addresses" WHERE "player_addresses"."id" = 2 LIMIT 1[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (30.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (36.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (40.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_inline_adapter.html.erb (4.3ms)
+Completed 200 OK in 55ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/player_addresses/2?eid=0c20437c1155c905475abe502d8030b9" for 127.0.0.1 at Mon Mar 28 09:07:34 -0400 2011
+  Processing by PlayerAddressesController#update as JS
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "commit"=>"Update", "authenticity_token"=>"Gu7UK2kp5u9n0sXlTMkMZ9+phzhLPTfUntyoaj4/Xrc=", "utf8"=>"✓", "id"=>"2", "record"=>{"region"=>"Montréal, Quebec", "country"=>"Canada", "primary"=>"0", "street"=>"123 Maple street"}}
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE "player_addresses"."id" = 2 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "player_addresses" SET "region" = 'Montréal, Quebec', "updated_at" = '2011-03-28 13:07:35.027690' WHERE "player_addresses"."id" = 2[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (18.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/on_update.js.rjs (27.5ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/player_addresses/1/edit?eid=0c20437c1155c905475abe502d8030b9&adapter=_list_inline_adapter" for 127.0.0.1 at Mon Mar 28 09:07:42 -0400 2011
+  Processing by PlayerAddressesController#edit as JS
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE "player_addresses"."id" = 1 LIMIT 1
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (31.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (38.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (42.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_inline_adapter.html.erb (4.2ms)
+Completed 200 OK in 56ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at Mon Mar 28 09:53:22 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" ORDER BY "players"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (7.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (33.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (56.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (72.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb within layouts/application (79.7ms)
+Completed 200 OK in 117ms (Views: 90.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:53:25 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_messages.html.erb (67.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (41.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (119.4ms)
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[36mSQL (23.0ms)[0m  [1mSELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))[0m
+  [1m[35mPlayerAddress Load (0.3ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (6.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (22.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (67.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (73.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (123.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (151.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (166.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (170.2ms)
+Completed 200 OK in 268ms (Views: 174.5ms | ActiveRecord: 23.3ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))[0m
+  [1m[35mPlayerEmail Load (0.1ms)[0m  SELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (4.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (9.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (106.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (131.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (146.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (150.7ms)
+Completed 200 OK in 228ms (Views: 155.4ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (674.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (677.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (684.7ms)
+Completed 200 OK in 701ms (Views: 698.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:53:56 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_messages.html.erb (4.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (2.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (41.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (54.2ms)
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))
+  [1m[36mPlayerAddress Load (0.2ms)[0m  [1mSELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (10.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (69.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (4.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (37.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (1.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (129.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (147.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (151.0ms)
+Completed 200 OK in 160ms (Views: 155.0ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))
+  [1m[36mPlayerEmail Load (0.1ms)[0m  [1mSELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (8.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (67.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (4.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (9.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (36.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (124.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (139.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (143.4ms)
+Completed 200 OK in 152ms (Views: 147.3ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (557.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (559.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (567.3ms)
+Completed 200 OK in 578ms (Views: 575.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:56:13 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))[0m
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (71.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (100.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (126.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (141.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (145.2ms)
+Completed 200 OK in 155ms (Views: 149.3ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))[0m
+  [1m[35mPlayerEmail Load (0.1ms)[0m  SELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (65.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (70.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (98.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (123.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (138.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (142.2ms)
+Completed 200 OK in 151ms (Views: 146.1ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (489.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (491.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (497.9ms)
+Completed 200 OK in 508ms (Views: 505.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:57:12 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))
+  [1m[36mPlayerAddress Load (0.2ms)[0m  [1mSELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (66.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (71.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (100.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (127.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (141.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (145.1ms)
+Completed 200 OK in 223ms (Views: 149.3ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))
+  [1m[36mPlayerEmail Load (0.1ms)[0m  [1mSELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (100.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (124.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (139.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (143.0ms)
+Completed 200 OK in 217ms (Views: 147.3ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (490.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (492.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (499.0ms)
+Completed 200 OK in 510ms (Views: 506.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:58:11 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))[0m
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (66.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (71.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (100.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (127.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (141.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (145.5ms)
+Completed 200 OK in 224ms (Views: 150.1ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))[0m
+  [1m[35mPlayerEmail Load (0.1ms)[0m  SELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (66.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (101.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (125.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (141.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (144.6ms)
+Completed 200 OK in 218ms (Views: 213.8ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (493.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (495.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (501.8ms)
+Completed 200 OK in 512ms (Views: 509.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/players/1" for 127.0.0.1 at Mon Mar 28 09:58:20 -0400 2011
+  Processing by PlayersController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zU8hhsx1n+eDpagGXGPYM59d//TThHRN7nLLHwl5pZ4=", "utf8"=>"✓", "id"=>"1", "record"=>{"name"=>"Carey PRICE", "primary"=>"0", "injured"=>"0", "salary"=>"2000001.001", "date_of_birth"=>"1986-11-05", "team_id"=>"1"}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "players" SET "salary" = 2000001.001, "updated_at" = '2011-03-28 13:58:20.807312' WHERE "players"."id" = 1
+Redirected to http://localhost:3000/players
+Completed 302 Found in 10ms
+
+
+Started GET "/players" for 127.0.0.1 at Mon Mar 28 09:58:20 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" ORDER BY "players"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (7.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (1.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (7.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (31.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (51.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (66.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 84ms (Views: 80.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 09:58:22 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))
+  [1m[36mPlayerAddress Load (0.2ms)[0m  [1mSELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (65.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (70.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (99.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (126.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (141.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (144.5ms)
+Completed 200 OK in 154ms (Views: 148.7ms | ActiveRecord: 0.4ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))
+  [1m[36mPlayerEmail Load (0.1ms)[0m  [1mSELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (101.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (127.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (142.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (145.8ms)
+Completed 200 OK in 220ms (Views: 150.1ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (490.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (492.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (499.1ms)
+Completed 200 OK in 510ms (Views: 506.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/player_addresses/1/edit?eid=0c20437c1155c905475abe502d8030b9&adapter=_list_inline_adapter" for 127.0.0.1 at Mon Mar 28 09:58:27 -0400 2011
+  Processing by PlayerAddressesController#edit as JS
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE "player_addresses"."id" = 1 LIMIT 1
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (31.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (112.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (116.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_inline_adapter.html.erb (4.2ms)
+Completed 200 OK in 131ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/player_addresses/1?eid=0c20437c1155c905475abe502d8030b9" for 127.0.0.1 at Mon Mar 28 09:58:31 -0400 2011
+  Processing by PlayerAddressesController#update as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "commit"=>"Update", "authenticity_token"=>"zU8hhsx1n+eDpagGXGPYM59d//TThHRN7nLLHwl5pZ4=", "utf8"=>"✓", "id"=>"1", "record"=>{"region"=>"Calgary, Albertal", "country"=>"Canada", "primary"=>"1", "street"=>"256 Queen street"}}
+  [1m[36mPlayerAddress Load (0.2ms)[0m  [1mSELECT "player_addresses".* FROM "player_addresses" WHERE "player_addresses"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  UPDATE "player_addresses" SET "updated_at" = '2011-03-28 13:58:31.728572', "region" = 'Calgary, Albertal' WHERE "player_addresses"."id" = 1
+Redirected to http://localhost:3000/player_addresses?eid=0c20437c1155c905475abe502d8030b9
+Completed 302 Found in 9ms
+
+
+Started GET "/player_addresses?eid=0c20437c1155c905475abe502d8030b9" for 127.0.0.1 at Mon Mar 28 09:58:31 -0400 2011
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9"}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))[0m
+  [1m[35mPlayerAddress Load (0.2ms)[0m  SELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (6.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (5.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (7.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (69.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (74.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (101.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (126.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (139.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb within layouts/application (146.2ms)
+Completed 200 OK in 159ms (Views: 154.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at Mon Mar 28 10:00:08 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_messages.html.erb (4.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form_attribute.html.erb (1.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_form.html.erb (39.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_base_form.html.erb (118.2ms)
+Start rendering component ({:action=>"index", :controller=>"player_addresses", :eid=>"0c20437c1155c905475abe502d8030b9", :embedded=>true}): 
+  Processing by PlayerAddressesController#index as HTML
+  Parameters: {"eid"=>"0c20437c1155c905475abe502d8030b9", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1)))
+  [1m[36mPlayerAddress Load (0.2ms)[0m  [1mSELECT "player_addresses".* FROM "player_addresses" WHERE ((("player_addresses"."player_id" = 1))) ORDER BY "player_addresses"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (6.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (3.2ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (102.1ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (128.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (143.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (147.4ms)
+Completed 200 OK in 219ms (Views: 151.8ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Start rendering component ({:action=>"index", :controller=>"player_emails", :eid=>"5560fdc09ffd27e83848f2b170b60e0f", :embedded=>true}): 
+  Processing by PlayerEmailsController#index as HTML
+  Parameters: {"eid"=>"5560fdc09ffd27e83848f2b170b60e0f", "embedded"=>true}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "player_emails" WHERE ((("player_emails"."player_id" = 1)))
+  [1m[36mPlayerEmail Load (0.1ms)[0m  [1mSELECT "player_emails".* FROM "player_emails" WHERE ((("player_emails"."player_id" = 1))) ORDER BY "player_emails"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (2.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_header.html.erb (7.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_column_headings.html.erb (4.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_messages.html.erb (0.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_messages.html.erb (5.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.5ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (8.6ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record_columns.html.erb (2.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_action_group.html.erb (3.9ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_actions.html.erb (9.4ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_record.html.erb (102.0ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_pagination.html.erb (0.8ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list.html.erb (126.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_list_with_header.html.erb (141.7ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/list.html.erb (209.1ms)
+Completed 200 OK in 218ms (Views: 213.2ms | ActiveRecord: 0.3ms)
+
+
+End of component rendering
+Rendered players/_base_form.html.erb (609.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/_update_form.html.erb (611.3ms)
+Rendered /Users/daniel/.rvm/gems/ruby-1.8.7-p174@old/bundler/gems/active_scaffold-45451d963672/frontends/default/views/update.html.erb within layouts/application (618.0ms)
+Completed 200 OK in 629ms (Views: 626.2ms | ActiveRecord: 0.2ms)
